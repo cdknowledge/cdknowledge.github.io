@@ -44,6 +44,49 @@
           "type": "categories"
         }
       ]
+    },
+    {
+      "name": "summary",
+      "pageBundle": true,
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "author",
+          "name": "author",
+          "type": "choice",
+          "choices": [
+            "Sergey Levine",
+            "Chelsea Finn",
+            "Trevor Darrell",
+            "Pieter Abbeel"
+          ]
+        },
+        {
+          "title": "date",
+          "name": "date",
+          "type": "datetime"
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "summary",
+          "hidden": true
+        }
+      ]
     }
   ],
   "frontMatter.framework.id": "hugo",
